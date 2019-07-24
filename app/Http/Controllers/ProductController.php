@@ -137,6 +137,7 @@ class ProductController extends Controller
         return redirect('manage-product')->with('message','Product Info Update Sucessfully');
     }
     public function delateProductInfo($id){
+        //delete
         $productById=Product::find($id);
         unlink($productById->product_image);
         $productById->delete();

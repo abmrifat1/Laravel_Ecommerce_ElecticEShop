@@ -9,7 +9,7 @@
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-*/
+.........*/
 
 Route::get('/','WelcomeController@index');
 
@@ -42,6 +42,7 @@ Route::get('/download-invoice/{id}','OrderController@downloadOrderInvoice');
 
 
 Auth::routes();
+//admin
 
 Route::get('/home', 'HomeController@Index')->name('home');
 
